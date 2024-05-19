@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/user1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/user2"
+        android:layout_below="@+id/user1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:id="@+id/enter_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user1"
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/enter_pasword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user2"
+        >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/loginBTn"
+        android:layout_below="@id/enter_pasword"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </Button>
+
+    <Button
+        android:id="@+id/signupBTn"
+        android:layout_below="@id/loginBTn"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SignUp"
+        android:onClick="press"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </Button>
+
+</RelativeLayout>
